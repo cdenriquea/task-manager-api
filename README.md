@@ -20,19 +20,23 @@
  ### **How to Test the API**
 
 1. **Retrieve All Tasks**
+   
     curl -X GET http://localhost:3000/task
 
 2. **Create a Task**
+   
     curl -X POST http://localhost:3000/task \
     -H "Content-Type: application/json" \
     -d '{"title":"New Task","completed":false}'
 
 3. **Update a Task**
+   
    curl -X PUT http://localhost:3000/task/1 \
    -H "Content-Type: application/json" \
    -d '{"title":"Updated Task","completed":true}'
 
 4. **Delete a Task**
+   
    curl -X DELETE http://localhost:3000/task/1
 
 
